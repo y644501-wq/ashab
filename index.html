@@ -26,12 +26,13 @@
     .card{background:#141414;border:1px solid #222;padding:18px;border-radius:12px}
     .price{font-weight:700;font-size:1.25rem;margin-top:8px}
     form .row{display:flex;gap:8px}
-    input[type=email]{flex:1;padding:10px;border-radius:8px;border:1px solid #333;background:#0a0a0a;color:#e5e5e5}
+    input[type=email], input[type=text], input[type=date], input[type=number]{flex:1;padding:10px;border-radius:8px;border:1px solid #333;background:#0a0a0a;color:#e5e5e5}
     input[type=submit]{background:#3b82f6;color:#fff;padding:10px 16px;border-radius:8px;border:0}
     .payments{display:flex;gap:8px;flex-wrap:wrap}
     footer{margin-top:40px;text-align:center;color:#666;padding-top:20px;border-top:1px solid #222}
     @media(max-width:600px){h1{font-size:1.6rem}.hero{flex-direction:column}}
     .small{font-size:0.9rem;color:#a0a0a0}
+    .phone{font-weight:700;font-size:1.1rem}
   </style>
 </head>
 <body>
@@ -43,7 +44,7 @@
 
     <section class="hero" aria-labelledby="hero-heading">
       <div style="text-align:center;max-width:640px">
-        <h2 id="hero-heading" style="margin-bottom:8px">Продай промпты, курс или консультацию — начни зарабатывать сегодня</h2>
+        <h2 id="hero-heading" style="margin-bottom:8px">Продай промп��ы, курс или консультацию — начни зарабатывать сегодня</h2>
         <p class="small" style="margin-bottom:14px">Краткий пакет: 50+ рабочих промптов, шаблоны и инструкции. Доставляется сразу после оплаты на почту.</p>
         <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
           <!-- Primary buy button: Gumroad link inserted -->
@@ -91,6 +92,35 @@
       </section>
 
       <section class="section">
+        <h2>Оплата по номеру</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Перевод на номер</h3>
+            <p class="small">Если вы предпочитаете перевод напрямую, можно перевести на номер мобильного банка:</p>
+            <p class="phone">+7 928 886‑99‑01</p>
+            <p class="small">При переводе укажите в комментарии свой email или уникальный идентификатор, чтобы мы могли быстро сопоставить платёж и отправить файл.</p>
+            <p class="small">После перевода заполните форму подтверждения — мы проверим платёж и вручную отправим вам материал на e‑mail.</p>
+            <hr style="border-color:#222;margin:12px 0">
+            <!-- Payment confirmation form -->
+            <form action="https://formsubmit.co/y644501@gmail.com" method="POST">
+              <input type="hidden" name="_subject" value="Подтверждение оплаты — GrokStyle AI">
+              <input type="hidden" name="_next" value="/thank-you.html">
+              <input type="hidden" name="_captcha" value="false">
+              <div style="display:flex;flex-direction:column;gap:8px">
+                <input type="text" name="name" placeholder="Ваше имя (необязательно)" aria-label="name">
+                <input type="email" name="email" placeholder="Ваш email (обязательно)" required aria-label="email">
+                <input type="number" name="amount" placeholder="Сумма перевода (в рублях)" required aria-label="amount">
+                <input type="date" name="date" placeholder="Дата перевода" required aria-label="date">
+                <input type="text" name="transaction_id" placeholder="Комментарий / ID перевода (укажите email или заметку)" required aria-label="transaction_id">
+                <input type="submit" value="Подтвердить оплату">
+              </div>
+            </form>
+            <p class="small" style="margin-top:8px">Мы вручную проверим платёж и пришлём файл на указанный email. Обычно это занимает до 24 часов.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
         <h2>Получить скидку / файл сразу</h2>
         <p class="small">Оставьте e‑mail — мы отправим скидку и файл после проверки оплаты. Форма использует formsubmit.co для отправки письма на ваш почтовый ящик.</p>
         <!-- Form: sends email to your inbox via formsubmit.co. -->
@@ -103,7 +133,7 @@
             <input type="submit" value="Получить скидку">
           </div>
         </form>
-        <p class="small" style="margin-top:8px">После отправки вы попадёте на страницу благодарности.</p>
+        <p class="small" style="margin-top:8px">После отправки вы попадёте на страницу бла��одарности.</p>
       </section>
 
       <section class="section" id="why">
