@@ -46,8 +46,8 @@
         <h2 id="hero-heading" style="margin-bottom:8px">Продай промпты, курс или консультацию — начни зарабатывать сегодня</h2>
         <p class="small" style="margin-bottom:14px">Краткий пакет: 50+ рабочих промптов, шаблоны и инструкции. Доставляется сразу после оплаты на почту.</p>
         <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap">
-          <!-- Primary buy button: replace href with your real checkout link (Stripe/Gumroad) -->
-          <a id="primary-buy" class="primary-btn" href="https://example.com/checkout" target="_blank" rel="noopener noreferrer">Купить пакет — 1 990 ₽</a>
+          <!-- Primary buy button: Gumroad link inserted -->
+          <a id="primary-buy" class="primary-btn" href="https://yonder501.gumroad.com/l/maptd?utm_source=github_pages&utm_medium=site&utm_campaign=grokstyle_gumroad" target="_blank" rel="noopener noreferrer">Купить пакет — 1 990 ₽</a>
           <!-- Quick contact / buy via Telegram -->
           <a class="secondary-btn" href="https://t.me/твой_ник" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
         </div>
@@ -63,26 +63,28 @@
             <h3>Пакет промптов «Деньги»</h3>
             <p class="small">50+ проверенных промптов для контента, рекламы и автоматизации.</p>
             <div class="price">1 990 ₽</div>
+            <p style="margin-top:10px"><a class="primary-btn" href="https://yonder501.gumroad.com/l/maptd?utm_source=github_pages&utm_medium=site&utm_campaign=grokstyle_gumroad" target="_blank" rel="noopener noreferrer">Купить прямо — 1 990 ₽</a></p>
           </div>
           <div class="card">
             <h3>Мини-курс</h3>
             <p class="small">4 модуля, шаблоны, чек-листы и пошаговый план монетизации.</p>
             <div class="price">3 490 ₽</div>
+            <p style="margin-top:10px"><a class="secondary-btn" href="https://yonder501.gumroad.com/l/maptd?utm_source=github_pages&utm_medium=site&utm_campaign=grokstyle_gumroad" target="_blank" rel="noopener noreferrer">Купить мини‑курс</a></p>
           </div>
           <div class="card">
             <h3>Консультация</h3>
             <p class="small">Настройка AI под бизнес, от 1 часа.</p>
             <div class="price">от 5 000 ₽</div>
+            <p style="margin-top:10px"><a class="secondary-btn" href="https://yonder501.gumroad.com/l/maptd?utm_source=github_pages&utm_medium=site&utm_campaign=grokstyle_gumroad" target="_blank" rel="noopener noreferrer">Заказать консультацию</a></p>
           </div>
         </div>
       </section>
 
       <section class="section">
         <h2>Оплаты — несколько вариантов</h2>
-        <p class="small">Я настроил несколько быстрых путей оплаты. Замените ссылки на реальные чек-ауты (Gumroad / Stripe / PayPal) в index.html, если захотите.</p>
+        <p class="small">Я настроил несколько быстрых путей оплаты. Если хотите — можно оставить только Gumroad.</p>
         <div class="payments" style="margin-top:12px">
-          <a class="secondary-btn" href="https://example.com/checkout" target="_blank" rel="noopener noreferrer">Stripe / Checkout</a>
-          <a class="secondary-btn" href="https://gumroad.com/your-product" target="_blank" rel="noopener noreferrer">Gumroad</a>
+          <a class="secondary-btn" href="https://yonder501.gumroad.com/l/maptd?utm_source=github_pages&utm_medium=site&utm_campaign=grokstyle_gumroad" target="_blank" rel="noopener noreferrer">Gumroad Checkout</a>
           <a class="secondary-btn" href="https://www.paypal.com/paypalme/yourname" target="_blank" rel="noopener noreferrer">PayPal.Me</a>
           <a class="secondary-btn" href="https://www.buymeacoffee.com/yourname" target="_blank" rel="noopener noreferrer">BuyMeACoffee</a>
         </div>
@@ -91,9 +93,8 @@
       <section class="section">
         <h2>Получить скидку / файл сразу</h2>
         <p class="small">Оставьте e‑mail — мы отправим скидку и файл после проверки оплаты. Форма использует formsubmit.co для отправки письма на ваш почтовый ящик.</p>
-        <!-- Form: sends email to your inbox via formsubmit.co. Replace the email in action if you prefer another. -->
+        <!-- Form: sends email to your inbox via formsubmit.co. -->
         <form action="https://formsubmit.co/y644501@gmail.com" method="POST">
-          <!-- Prevent spam / customize subject / redirect -->
           <input type="hidden" name="_subject" value="Новый лид — GrokStyle AI">
           <input type="hidden" name="_next" value="/thank-you.html">
           <input type="hidden" name="_captcha" value="false">
@@ -102,7 +103,7 @@
             <input type="submit" value="Получить скидку">
           </div>
         </form>
-        <p class="small" style="margin-top:8px">После отправки вы попадёте на страницу благодарности. Сюда можно интегрировать также рассылку (Mailchimp, ConvertKit).</p>
+        <p class="small" style="margin-top:8px">После отправки вы попадёте на страницу благодарности.</p>
       </section>
 
       <section class="section" id="why">
